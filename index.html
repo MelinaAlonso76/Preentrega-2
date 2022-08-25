@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="js/funciones.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body style="background-color:lightblue;">
+    <header class="shadow">
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./Images/parking.svg" alt="" id="logo">
+            <div id="title" class="ml-5 align-self-center">Estacionamiento</div>
+        </div>
+    </header>
+    <div class="form-container mt-5" id="form">
+        <form class="w-50 mx-auto" id="entryForm">
+            <h5 class="text-center">Ingresar vehículo al estacionamiento</h5>
+            <div class="form-group">
+                <label for="propietario">Propietario:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="propietario" placeholder="Propietario" required>
+            </div>
+            <div class="form-group">
+                <label for="patente">Patente:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="patente"
+                    placeholder="[XXX123] - [XX123XX]" required>
+            </div>
+            <button disabled type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnIngresar">Ingresar</button>
+        </form>
+    </div>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto">
+        <!-- <h5 class="text-center mb-3">Lista de vehículos en el estacionamiento</h5>
+        <input type="text" class="w-100 mb-3" id="buscador" placeholder="Buscar..."> -->
+        <table class="table table-striped shadow " id="TablaEstacionados">
+            <thead class="text-white" id="thead">
+                <tr>
+                    <th scope="col">Propietario</th>
+                    <th scope="col">Patente</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-black" id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

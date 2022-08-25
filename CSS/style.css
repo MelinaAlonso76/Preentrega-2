@@ -1,0 +1,37 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    border:0
+}
+header{
+    background-color: rgb(25, 120, 197);
+}
+#logo{
+    width:64px;
+    height:64px;
+}
+#title{
+    font-size: 25px;
+    color: white;
+}
+#btnIngresar{
+    background-color:rgb(25, 120, 197);
+    color:white;
+}
+#btnIngresar:focus,#btnIngresar:hover{
+    box-shadow: none;
+    outline:none;
+}
+#thead{
+    background-color:rgb(25, 120, 197);
+}
+#buscador{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+}
+#buscador:hover,#buscador:focus{
+    box-shadow: none;
+    outline:none;
+}
